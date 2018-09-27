@@ -1,0 +1,58 @@
+﻿/*
+	* ----------------------------------------------------------------------------
+  * CSS Document sub Start
+	* Author: DistantSound
+	* IDE : UESTUDIO
+	* ----------------------------------------------------------------------------
+*/
+.bg-1{display:inline-block;background:#b9f3ea url(../images/bg-1.png) no-repeat bottom;font-family: 'Montserrat', sans-serif;}
+/* .top-header{float:left;width:100%;}
+.header-c{width:100%;} */
+/* .header-c nav a{text-align:center;white-space:nowrap;}
+.header-c nav a:hover,
+.header-c nav .current{font-weight:bold;text-transform: Uppercase;
+  background: -moz-linear-gradient(top, #00a5bb, #076774);
+  background: -webkit-linear-gradient(top, #00a5bb, #076774);
+  background: -o-linear-gradient(top, #00a5bb, #076774);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.lis-1 h2{width:100%;font-weight:700;white-space:nowrap; text-align:left;overflow:hidden;}
+.lis-1 h3{width:100%;font-weight:400;text-align:left;}
+.lis-1 p{font-size:.2rem;font-weight:300;text-align:left;}
+.lis-1 .animation-box{width:100%;position:relative;}
+.lis-1 .animation-box img{width:100%;}
+.lis-1 .animation-box .animation1-img{width:100%;}
+.lis-1 .animation-box .animation2-img{width:100%;position:absolute;left:0;top:0;
+  -webkit-animation: my-updown 1s ease-out infinite;
+	-moz-animation:    my-updown 1s ease-out infinite;
+	-o-animation:      my-updown 1s ease-out infinite;
+	animation:         my-updown 1s ease-out infinite;
+ }
+
+ footer{width:100%;margin:0 auto;text-align:center;cursor:default;overflow:hidden;}
+.footer-t{width:100%;}
+.footer-b{width:100%;margin:0 auto;text-align:center;}
+.footer-b address{width:100%;}
+
+@keyframes my-updown {
+		0%   {transform: translate(0rem, 0rem);}
+		50%  {transform: translate(0rem, -.05rem);}
+		100% {transform: translate(0rem, 0rem);}
+}
+@-webkit-keyframes my-updown {
+		0%   {transform: translate(0rem, 0rem);}
+		50%  {transform: translate(0rem, -.05rem);}
+		100% {transform: translate(0rem, 0rem);}
+}
+@-moz-keyframes my-updown {
+  	0%   {transform: translate(0rem, 0rem);}
+		50%  {transform: translate(0rem, -.05rem);}
+		100% {transform: translate(0rem, 0rem);}
+}
+@-o-keyframes my-updown {
+		0%   {transform: translate(0rem, 0rem);}
+		50%  {transform: translate(0rem, -.05rem);}
+		100% {transform: translate(0rem, 0rem);}
+}
