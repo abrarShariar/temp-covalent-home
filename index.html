@@ -63,16 +63,20 @@
     .nav-link {
           font-size: 17px !important;
     }
+
     /* new styles to adjust navbar*/
     .adjust-container {
         margin-bottom: -90px;
     }
+
     /* #mainNav {
       padding-bottom: 45px;
     } */
+
     .adjust-navbar-brand {
         margin-top: -90px;
     }
+
     .adjust-btn-info {
       padding-top: 10px !important;
       padding-bottom: 10px !important;
@@ -81,58 +85,113 @@
       padding-left: 10px !important;
       margin-top: 40px;
     }
+
     .adjust-ml-auto {
       margin-top: -80px;
     }
+
     .adjust-nav-item {
       margin-right: -40px;
     }
+
     main {
       margin-top: 10px;
     }
+
     footer {
       height: 2.5rem
     }
+
+    .nav-item-career > a {
+      margin-left: -40px;
+    }
+
     /* media query css */
     @media only screen and (max-width: 900px) {
+
         .adjust-container {
           margin-top: -40px;
           margin-left: -85px;
           width: 700px;
           margin-right: -85px;
         }
+
         .navbar-toggler {
           margin-top: -90px;
         }
+
         /* .navbar-brand > img {
           margin-top: -40px;
         } */
+
         #mainNav {
           padding-bottom: 0px;
         }
+
         .adjust-navbar-brand {
           margin-right: -30px;
         }
+
         main {
           margin-top: 50px;
         }
+
         /* .animation-box {
           margin-left: 30px;
         } */
+
         .r-box {
           margin-right: -15px !important;
         }
+
         #logoBox {
           font-size: 15px
         }
+
         .button-box {
           margin-top: -80px;
         }
+
         .btn-2-modify {
           width: 235px;
           margin-top: -60px;
         }
+
+        .nav-item-home {
+          margin-bottom: -80px;
+          text-align: -webkit-left;
+        }
+
+        .nav-item-testnet {
+          margin-bottom: -40px;
+        }
+
+        .nav-item-testnet > a {
+          text-align: -webkit-left;
+        }
+
+        .nav-item-team {
+          margin-bottom: -80px;
+        }
+
+        .nav-item-team > a {
+          text-align: -webkit-left;
+        }
+
+        .nav-item-career {
+          margin-bottom: 60px;
+        }
+
+        .nav-item-career > a {
+          margin-left: 0px;
+          text-align: -webkit-left;
+        }
+
+        .lis-1R {
+          margin-left: 5px;
+        }
     }
+
     </style>
   </head>
   <body class="bg-1">
@@ -148,17 +207,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto adjust-ml-auto navbar-right">
-            <li class="nav-item adjust-nav-item" style="margin-bottom: -80px;text-align: -webkit-left;">
+            <li class="nav-item adjust-nav-item nav-item-home">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item adjust-nav-item" style="margin-bottom: -40px;">
-            <a style="text-align: -webkit-left;" class="nav-link btn btn-info adjust-btn-info" href="http://protocol.covalent.ai" target="_blank">Testnet</a>
+            <li class="nav-item adjust-nav-item nav-item-testnet" style="">
+            <a style="" class="nav-link btn btn-info adjust-btn-info" href="http://protocol.covalent.ai" target="_blank">Testnet</a>
             </li>
-            <li class="nav-item adjust-nav-item" style="margin-bottom: -80px;">
-              <a class="nav-link" href="./team.html" style="text-align: -webkit-left;">Team</a>
+            <li class="nav-item adjust-nav-item nav-item-team">
+              <a class="nav-link" href="./team.html">Team</a>
             </li>
-            <li class="nav-item adjust-nav-item" style="margin-bottom: 60px;">
-              <a class="nav-link" href="./career.html" style="margin-left: 0px;text-align: -webkit-left;">Career</a>
+            <li class="nav-item adjust-nav-item nav-item-career" style="">
+              <a class="nav-link" href="./career.html" style="">Career</a>
             </li>
           </ul>
         </div>
@@ -254,6 +313,7 @@
   <script type='text/javascript' src='http://cdn0.covalent.ai/vendors/js/bootstrap.min.js'></script> -->
 
   <script>
+
   // Navbar
   $(function () {
     $(document).scroll(function () {
@@ -261,6 +321,7 @@
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
+
   $("#scroll-down").click(function() {
     $('html, body').animate({
       scrollTop: $("section#about").offset().top
@@ -271,6 +332,7 @@
       scrollTop: $("div#subscribe").offset().top
     }, 1000);
   });
+
 </script>
 
 <!-- media queries stuff goes here -->
