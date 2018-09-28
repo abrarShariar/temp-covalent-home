@@ -1,4 +1,4 @@
-﻿/*
+/*
 	* ----------------------------------------------------------------------------
   * CSS Document public Start
 	* Author: DistantSound
@@ -26,7 +26,7 @@ audio, canvas, progress, video{display: inline-block;vertical-align: baseline;}
 audio:not([controls]){display:none;height:0;}
 blockquote, q{quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after{content: '';content: none;}
-a:link, a:visited, a:hover, a:active{text-decoration: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none !important;}
 a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 a:hover, a:focus{text-decoration:none;outline:none;}
 strong{font-weight:bold;}

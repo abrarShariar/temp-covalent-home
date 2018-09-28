@@ -52,7 +52,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-120801864-1');
     </script>
 
@@ -64,20 +63,16 @@
     .nav-link {
           font-size: 17px !important;
     }
-
     /* new styles to adjust navbar*/
     .adjust-container {
         margin-bottom: -90px;
     }
-
     /* #mainNav {
       padding-bottom: 45px;
     } */
-
     .adjust-navbar-brand {
         margin-top: -90px;
     }
-
     .adjust-btn-info {
       padding-top: 10px !important;
       padding-bottom: 10px !important;
@@ -86,58 +81,58 @@
       padding-left: 10px !important;
       margin-top: 40px;
     }
-
     .adjust-ml-auto {
       margin-top: -80px;
     }
-
     .adjust-nav-item {
       margin-right: -40px;
     }
-
     main {
       margin-top: 10px;
     }
-
     footer {
       height: 2.5rem
     }
-
     /* media query css */
     @media only screen and (max-width: 900px) {
-
         .adjust-container {
           margin-top: -40px;
           margin-left: -85px;
           width: 700px;
           margin-right: -85px;
         }
-
         .navbar-toggler {
           margin-top: -90px;
         }
-
         /* .navbar-brand > img {
           margin-top: -40px;
         } */
-
         #mainNav {
           padding-bottom: 0px;
         }
-
         .adjust-navbar-brand {
           margin-right: -30px;
         }
-
         main {
           margin-top: 50px;
         }
-
         /* .animation-box {
           margin-left: 30px;
         } */
+        .r-box {
+          margin-right: -15px !important;
+        }
+        #logoBox {
+          font-size: 15px
+        }
+        .button-box {
+          margin-top: -80px;
+        }
+        .btn-2-modify {
+          width: 235px;
+          margin-top: -60px;
+        }
     }
-
     </style>
   </head>
   <body class="bg-1">
@@ -153,17 +148,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto adjust-ml-auto navbar-right">
-            <li class="nav-item adjust-nav-item">
+            <li class="nav-item adjust-nav-item" style="margin-bottom: -80px;text-align: -webkit-left;">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
-            <li class="nav-item adjust-nav-item">
-            <a class="nav-link btn btn-info adjust-btn-info" href="http://protocol.covalent.ai" target="_blank">Testnet</a>
+            <li class="nav-item adjust-nav-item" style="margin-bottom: -40px;">
+            <a style="text-align: -webkit-left;" class="nav-link btn btn-info adjust-btn-info" href="http://protocol.covalent.ai" target="_blank">Testnet</a>
             </li>
-            <li class="nav-item adjust-nav-item">
-              <a class="nav-link" href="./team.html">Team</a>
+            <li class="nav-item adjust-nav-item" style="margin-bottom: -80px;">
+              <a class="nav-link" href="./team.html" style="text-align: -webkit-left;">Team</a>
             </li>
-            <li class="nav-item adjust-nav-item">
-              <a class="nav-link" href="./career.html" style="margin-left: -50px;">Career</a>
+            <li class="nav-item adjust-nav-item" style="margin-bottom: 60px;">
+              <a class="nav-link" href="./career.html" style="margin-left: 0px;text-align: -webkit-left;">Career</a>
             </li>
           </ul>
         </div>
@@ -216,8 +211,8 @@
           		The internet is only as smart as the data that it carries. Right now, data is mindless, exposed, and abused. Imagine a new internet composed of Smart Data that remembers, keeps a secret, learns from its users, is open for good.
           	</p>
           	<div class="c-box button-box">
-          		<a href="#" class="btn-1 c-white bgc-white"> Check  Covalent  Github </a>
-          		<a href="#" class="btn-2 c-darkcyan bgc-white"> Join  Private  Testnet </a>
+          		<a href="#" class="btn-1 c-white bgc-white" style="text-decoration: none;"> Check  Covalent  Github </a>
+          		<a href="#" class="btn-2 c-darkcyan bgc-white btn-2-modify" style="text-decoration: none;"> Join  Private  Testnet </a>
           	</div>
           </div>
 
@@ -234,7 +229,7 @@
         </div>
       </div>
       <div class="f-l footer-t">
-        <div class="container">
+        <div class="container" id="logoBox">
           <a href="https://twitter.com/covatoken" class="c-white c-darkcyan-h tran-sition" style="margin:0" target="_blank">
             <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/twitter.svg">
           </a>
@@ -259,7 +254,6 @@
   <script type='text/javascript' src='http://cdn0.covalent.ai/vendors/js/bootstrap.min.js'></script> -->
 
   <script>
-
   // Navbar
   $(function () {
     $(document).scroll(function () {
@@ -267,7 +261,6 @@
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
   });
-
   $("#scroll-down").click(function() {
     $('html, body').animate({
       scrollTop: $("section#about").offset().top
@@ -278,13 +271,11 @@
       scrollTop: $("div#subscribe").offset().top
     }, 1000);
   });
-
 </script>
 
 <!-- media queries stuff goes here -->
 <script>
-
-  $(window).resize(function(){
+  $(document).ready(function(){
     if($(window).width() <= 1100){
       $('.bg-1').addClass('container');
       $('.in-section-group').addClass('container');
@@ -294,19 +285,11 @@
       $('.in-section-group').removeClass('container');
       $('.iframe').removeClass('container');
     }
-  });
-
-  $(document).ready(function(){
     $("#toggleMenu").click(function(){
       $("#navbarResponsive").toggle("slow");
-    })
+    });
   });
-
 </script>
-
-
-
-
 
 </html>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
