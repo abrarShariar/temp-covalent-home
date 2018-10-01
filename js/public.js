@@ -1,4 +1,4 @@
-﻿/*
+/*
 	* ----------------------------------------------------------------------------
   * js Document public js Start
 	* Author: DistantSound
@@ -22,17 +22,17 @@ $(function() {
                         }
                 }).blur()
         };
-        // $(".nav-boxclose").hide();
-        // $(".nav-boxopen").click(function() {
-        //        $(".top-header").css("right", "0");
-        //         $(".nav-boxclose").show();
-        //         $(".nav-boxopen").hide()
-        // });
-        // $(".nav-boxclose").click(function() {
-        //        $(".top-header").css("right", "-80%");
-        //         $(".nav-boxclose").hide();
-        //        $(".nav-boxopen").show()
-        // }); 
+        $(".nav-boxclose").hide();
+        $(".nav-boxopen").click(function() {
+               $(".top-header").css("right", "0");
+                $(".nav-boxclose").show();
+                $(".nav-boxopen").hide()
+        });
+        $(".nav-boxclose").click(function() {
+               $(".top-header").css("right", "-80%");
+                $(".nav-boxclose").hide();
+               $(".nav-boxopen").show()
+        });
         AOS.init({
                 offset: 200,
                 easing: "ease-in-quart",
@@ -48,3 +48,4 @@ $(function() {
 function placeholderSupport() {
         return "placeholder" in document.createElement("input")
 };
+   

@@ -6,9 +6,9 @@
 	* ----------------------------------------------------------------------------
 */
 *{margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
-html{font-size:100px;font-family:'Montserrat',sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);width:100%;overflow-x:hidden;}
+html{font-size:100px;font-family:Helvetica Neue,Helvetica,Roboto,Myriad Pro,Segoe UI,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color:rgba(0, 0, 0, 0);width:100%;overflow-x:hidden;}
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, input, p, th, td span ,a ,i, em, img, time{display: inline-block;}
-main, menu, article, aside, figure, footer, figcaption, header, hgroup, section, summary, details, canvas{display: block;}
+main, menu, article, aside, figure, footer, figcaption, header, hgroup, nav, section, summary, details, canvas{display: block;}
 .hide-Ibox{display:none;}
 ul, ol, li{list-style:none;}
 table{border-collapse:collapse;border-spacing: 0;}
@@ -16,7 +16,7 @@ a, button, input, select, img, label{-webkit-tap-highlight-color:rgba(0,0,0,0);-
 input[type="button"], input[type="checkbox"], input[type="file"], input[type="password"], input[type="radio"], input[type="reset"], input[type="search"], input[type="submit"], input, button, select{-webkit-appearance: none;-moz-appearance: none;
 appearance: none, font: -webkit-small-control;vertical-align: middle;}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input:-moz-placeholder, textarea:-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder{color: #cccccc;line-height:normal;}
-input, select, textarea, button{font-family: 'Montserrat',sans-serif;}
+input, select, textarea, button{font-family: inherit;}
 button::-moz-focus-inner, input::-moz-focus-inner{border: none;padding: 0;}
 h1, h2, h3, h4, h5, h6, strong, i, em, address, caption, cite, code, dfn, th, var{font-weight:normal;font-style:normal;}
 a, img{display:inline-block;-webkit-touch-callout:none;vertical-align:middle;}
@@ -26,7 +26,7 @@ audio, canvas, progress, video{display: inline-block;vertical-align: baseline;}
 audio:not([controls]){display:none;height:0;}
 blockquote, q{quotes:none;}
 blockquote:before, blockquote:after, q:before, q:after{content: '';content: none;}
-a:link, a:visited, a:hover, a:active{text-decoration: none !important;}
+a:link, a:visited, a:hover, a:active{text-decoration: none;}
 a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
 a:hover, a:focus{text-decoration:none;outline:none;}
 strong{font-weight:bold;}

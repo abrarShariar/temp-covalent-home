@@ -1,4 +1,4 @@
-﻿;(function () {
+;(function () {
 	'use strict';
 	function FastClick(layer, options) {
 		var oldOnClick;
@@ -102,7 +102,7 @@
 		case 'video':
 			return true;
 		}
-		
+
 		return (/\bneedsclick\b/).test(target.className);
 	};
 
@@ -135,7 +135,7 @@
 		if (document.activeElement && document.activeElement !== targetElement) {
 			document.activeElement.blur();
 		}
-		
+
 		touch = event.changedTouches[0];
 		clickEvent = document.createEvent('MouseEvents');
 		clickEvent.initMouseEvent(this.determineEventType(targetElement), true, true, window, 1, touch.screenX, touch.screenY, touch.clientX, touch.clientY, false, false, false, false, 0, null);
@@ -195,7 +195,7 @@
 
 	FastClick.prototype.onTouchStart = function(event) {
 		var targetElement, touch, selection;
-		
+
 		if (event.targetTouches.length > 1) {
 			return true;
 		}
@@ -437,7 +437,7 @@
 					if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
 						return true;
 					}
-					
+
 					if (chromeVersion > 31 && document.documentElement.scrollWidth <= window.outerWidth) {
 						return true;
 					}
@@ -454,11 +454,11 @@
 				metaViewport = document.querySelector('meta[name=viewport]');
 
 				if (metaViewport) {
-					
+
 					if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
 						return true;
 					}
-					
+
 					if (document.documentElement.scrollWidth <= window.outerWidth) {
 						return true;
 					}
