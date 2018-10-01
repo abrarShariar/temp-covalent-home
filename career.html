@@ -1,192 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1">
+    <meta name="keywords" content="DistantSound">
+    <meta name="author" content="DistantSound">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> </title>
 
-<!doctype html>
-<html lang="en" class="no-js">
-<head>
-  <meta charset="UTF-8" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="Covalent"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/favicons/mstile-310x310.png" />
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/sub.css">
+    <link rel="stylesheet" type="text/css" href="css/meta-sub.css">
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
 
-  <title>Covalent</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/css/custom_v18072331.css" />
 
-  <!-- Bootstrap core CSS -->
-  <link href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/css/custom_v18072331.css" />
+    <script src="js/jquery-2.0.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/public.js"></script>
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <style media="screen">
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* opacity: .9; */
+      }
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120801864-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      .compact {
+        font-size: 18px
+      }
 
-  gtag('config', 'UA-120801864-1');
-</script>
+      .white-font{
+          color: #FFFFFF;
+      }
 
-</head>
+    .divider {
+      width: 100%;
+      max-width: 15rem;
+      height: 0.15rem;
+      background: #FFFFFF;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      margin-top: 20px;
 
-<body>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="https://cdn0.covalent.ai/cova_assets/img/logo_v2.svg" width="150" height="50" alt="">
-    </a>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      Menu
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-info" href="http://protocol.covalent.ai" target="_blank">Testnet</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./team.html">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./career.html">Career</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    }
 
-  <!-- Hiring -->
-  <section id="career" class="content-section page fixed-bg1">
-    <div class="container">
+    #cova_logo {
+          width: 15rem;
+          margin-top: -5px;
+    }
 
-      <h2>Let's Build Together</h2>
-      <div class="divider"></div>
-      <div class="row">
-        <div class="col-md-2">
-          <img style="padding:25px 10px 30px 10px;" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/img/blockchain.svg"
-          class="img-fluid img-small">
-        </div>
-        <div class="col-lg-8">
-          <h3> The Next Big Thing</h3>
+    #main-header {
+      zoom: 6;
+      margin-top: 10px
+    }
 
-          <p> For the first time in history, we can get data, algorithms, and computing resources away from their silos and into one place. Covalent is at the epicenter of this exciting mission. We are backed by top traditional VCs and cryptocurrency funds. You will be working with an A-team, and you will receive the most competitive compensation and perks.
-          </p>
-        </div>
-        <div class="w-100"></div>
+    #nav-top > a {
+          margin-right: 2rem;
+          padding-top: 1rem;
+    }
 
-        <div class="col-md-2" >
-          <img src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/img/ai-job.svg" style="padding:25px 10px 30px 10px;"
-          class="img-fluid img-small">
-        </div>
-        <div class="col-lg-8 ">
-          <h3> Looking for Hackers and Coders </h3>
+    footer {
+          height: 10rem;
+    }
 
-          <p><a href="mailto:career@covalent.ai">Apply here</a> if you meet one or more of the following criteria:
-            <ul style="list-style-type:disc">
-              <li>You have been coding since middle school. You spent more time hacking games than playing them. </li>
-              <li>You competed in coding competition and won awards on the national level. </li>
-              <li>You graduated from a top university and have over 3 years of engineering experience at a top technology firm. </li>
-            </ul>
+    .footer-t {
+      height: 10rem;
+    }
 
-            Other aspects can be accommodated, including location and responsibilities.
+    #logoBox {
+      height: 10rem;
+    }
+
+    #foot-text {
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    #logoBox > a {
+          margin-bottom: 5rem;
+          margin: 1rem;
+    }
+
+    ol, li {
+      list-style: black !important;
+    }
+
+      /* media query css */
+      @media only screen and (max-width: 900px) {
+        #logoBox {
+          font-size: 15px
+        }
+
+        #cova_logo {
+          width: 10rem;
+        }
+      }
+
+
+      @media only screen and (max-width: 1100px) {
+        #responsive-menu {
+          margin-left: 10px;
+          width: 8px;
+          height: 1rem;
+          right: 2rem;
+          padding-top: 3px;
+          padding-bottom: 4px;
+          padding-left: 1.5px;
+          margin-top: 5px;
+        }
+
+        .header-c nav a {
+          padding-bottom: 5px;
+          padding-top: 2px
+        }
+
+        #top-responsive {
+              margin-top: 10px;
+        }
+      }
+
+      #member_row {
+            text-align: -webkit-left;
+      }
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120801864-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120801864-1');
+    </script>
+
+  </head>
+  <body class="bg-1">
+	  <header data-aos="slide-down" data-aos-delay="300" id="main-header">
+	  	<div class="header-right-nav" id="responsive-menu"><i class="f-l iconfont nav-boxopen c-white c-white-h"> &#xe625; </i><i class="f-l iconfont nav-boxclose c-white c-white-h"> &#xe625; </i></div>
+		  <div class="top-header tran-sition">
+	      <div class="f-l header-c" id="top-responsive">
+		      <div class="l-box"><a href="./index.html" class="f-l t-logo"><img src="images/t-logo.svg" class="f-l" id="cova_logo"/></a></div>
+		      <div class="r-box">
+				 	  <nav class="f-l" id="nav-top">
+              <a href="./index.html" class="f-l c-darkcyan tran-sition"> HOME </a>
+              <a href="https://protocol.covalent.ai/" class="f-l c-darkcyan tran-sition" target="_blank"> TESTNET </a>
+              <a href="./team.html" class="f-l c-darkcyan tran-sition"> TEAM </a>
+              <a href="./career.html" class="f-l c-darkcyan tran-sition current"> JOIN US </a>
+              <!-- <a href="#" class="f-l c-darkcyan tran-sition"> LOG IN </a>
+              <a href="#" class="f-l c-darkcyan tran-sition"> REGISTER </a> -->
+            </nav>
+		      </div>
+	      </div>
+      </div>
+	  </header>
+
+    <section id="team" class="content-section page">
+      <div class="container"  style="text-align: -webkit-left;">
+
+        <h2>Let's Build Together</h2>
+        <br/>
+        <div class="divider"></div>
+        <br/>
+        <div class="row">
+          <div class="col-md-2">
+            <img style="padding:25px 10px 30px 10px;" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/img/blockchain.svg"
+            class="img-fluid img-small">
+          </div>
+          <div class="col-lg-8">
+            <h3> The Next Big Thing</h3>
+
+            <p> For the first time in history, we can get data, algorithms, and computing resources away from their silos and into one place. Covalent is at the epicenter of this exciting mission. We are backed by top traditional VCs and cryptocurrency funds. You will be working with an A-team, and you will receive the most competitive compensation and perks.
+            </p>
+          </div>
+          <div class="w-100"></div>
+
+          <div class="col-md-2" >
+            <img src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/img/ai-job.svg" style="padding:25px 10px 30px 10px;"
+            class="img-fluid img-small">
+          </div>
+          <div class="col-lg-8 ">
+            <h3> Looking for Hackers and Coders </h3>
+
+            <p><a href="mailto:career@covalent.ai">Apply here</a> if you meet one or more of the following criteria:
+              <ul style="list-style-type:disc">
+                <li>• You have been coding since middle school. You spent more time hacking games than playing them. </li>
+                <li>• You competed in coding competition and won awards on the national level. </li>
+                <li>• You graduated from a top university and have over 3 years of engineering experience at a top technology firm. </li>
+              </ul>
+
+              Other aspects can be accommodated, including location and responsibilities.
+
+            </div>
 
           </div>
-
         </div>
-      </div>
     </section>
 
-  <div id="subscribe" class="content-section page fixed-bg3 text-center">
-    <div class="container-fluid">
-      <!-- <h3>Join our Mailing List</h3>
 
-      <div class="subscribe container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form id="mc-form">
-              <input class="btn btn-md" id="mc-email" type="email" placeholder="Your Email" required>
-              <button class="btn btn-md btn-success" type="submit">Subscribe</button>
-            </form>
+   	<main><!--main Start -->
+			<!-- <section class="section-group lis-1">
+				<div class="container" data-aos="zoom-in" data-aos-delay="500">
+
+				</div>
+			</section> -->
+    </main><!--main End -->
+
+    <footer>
+      <div class="f-l footer-b">
+        <div class="container">
+          <address class="f-l c-darkcyan" id="foot-text"> © Covalent Foundation, 2018 </address>
+        </div>
+      </div>
+      <div class="f-l footer-t">
+        <div class="container">
+          <br/>
+          <div class="f-l footer-t">
+            <div class="container" id="logoBox">
+              <a href="https://twitter.com/covatoken" class="c-white c-darkcyan-h tran-sition"  target="_blank">
+                <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/twitter.svg">
+              </a>
+              <a href="https://t.me/covalentofficial" class="c-white c-darkcyan-h tran-sition" target="_blank">
+                <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/telegram-s.svg">
+              </a>
+              <a href="https://github.com/covalent-hq/wiki/wiki" class="c-white c-darkcyan-h tran-sition" target="_blank">
+                <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/github.svg">
+              </a>
+              <a href="https://www.reddit.com/r/Covalent_Official/" class="c-white c-darkcyan-h tran-sition" target="_blank">
+                <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/reddit.svg">
+              </a>
+              <a href="https://medium.com/@covatoken" class="c-white c-darkcyan-h tran-sition" target="_blank">
+                <img style="width: 50px;" class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/medium.svg">
+              </a>
+            </div>
           </div>
         </div>
-
-
-      </div> -->
-
-      <div class="community" style="margin-top:40px;">
-        <a href="https://twitter.com/covatoken" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/twitter.svg"></a>
-        <a href="https://t.me/covalentofficial" target="_blank"><img class="icon"  src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/telegram.svg"></a>
-        <!-- <a href="https://www.reddit.com/r/covatoken" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/reddit.svg"></a> -->
-        <!-- <a href="https://medium.com/@covatoken" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/medium.svg"></a> -->
-   <!--      <a href="https://bitcointalk.org/index.php?topic=1234.0" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/bitcoin.svg"></a>
-        <a href="https://www.youtube.com/channel/xyz" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/youtube.svg"></a> -->
-        <a href="https://github.com/covalent-hq/wiki/wiki" target="_blank"><img class="icon" src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/cova_assets/social/github.svg"></a>
       </div>
-      <a href="mailto:contact@covalent.ai" style="color:#FFF;">Contact us</a>
-      <br>
-      <p>© Covalent Foundation, 2018</p>
-    </div>
-  </div>
-
+    </footer>
   </body>
-  <script type='text/javascript' src="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/js/jquery.min.js"></script>
-  <!-- <script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/js/jquery.particleground.min.js'></script> -->
-  <!-- <script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/js/particle_background_main.js'></script> -->
-  <script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/js/jquery.ajaxchimp.js'></script>
-  <script type='text/javascript' src='https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/js/bootstrap.min.js'></script>
-
-  <script>
-
-  // Navbar
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
-
-  $("#scroll-down").click(function() {
-    $('html, body').animate({
-      scrollTop: $("section#about").offset().top
-    }, 500);
-  });
-  $("#go-sub").click(function() {
-    $('html, body').animate({
-      scrollTop: $("div#subscribe").offset().top
-    }, 1000);
-  });
-
-</script>
-<script>
-  // Subscription Script
-  $('#mc-form').ajaxChimp({
-    url: 'https://covalent.us18.list-manage.com/subscribe/post?u=5d0fb48b27a59d9185c0f9159&amp;id=d61997b793',
-    callback: print_msg
-  });
-
-  function print_msg(resp) {
-    $("#mc-form").replaceWith(resp["msg"])
-  }
-
-</script>
 </html>
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
