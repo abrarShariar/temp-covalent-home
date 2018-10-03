@@ -101,4 +101,4 @@ footer{float:left;width:100%;}
 
 /* transition -------------------------------------------------------------------*/
 .tran-sition{transition:all 0.5s;-webkit-transition:all 0.5s;-moz-transition:all 0.5s;-o-transition:all 0.5s;}
-.p-text{display:inline-block;width:100%;text-align:left;word-break: break-all;word-wrap:break-word;font-weight:300;overflow:hidden;cursor: default;}
+.p-text{display:inline-block;width:100%;text-align:left;word-wrap:break-word;font-weight:300;overflow:hidden;cursor: default;}

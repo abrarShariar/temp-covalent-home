@@ -20,7 +20,7 @@
   .header-c .t-logo img{width:2.3rem;}
   .header-c .r-box{width:auto;margin-top:0;margin-right:3%;}
   .header-c nav{height:1.4rem;}
-  .header-c nav a{height:5.4rem;line-height:1.4rem;font-size:.22rem;padding:0 .2rem;font-weight:400;}
+  .header-c nav a{height:5.4rem;line-height:1.4rem;font-size:.19rem;padding:0 .2rem;font-weight:400;}
   .header-c nav a:hover,
   .header-c nav .current{font-size:.35rem;color:#00535e;}
 
@@ -29,15 +29,15 @@
   .lis-1 .l-box{width:40%;margin-left:6%;}
   .lis-1 .r-box{width:45%;margin-right:6%;}
   .lis-1 h2{margin-top:1rem; font-size:.75rem;}
-  .lis-1 h3{margin-top:.2rem;font-size:.6rem;}
-  .lis-1 p{margin-top:.2rem;font-size:.2rem;line-height:.35rem;}
+  .lis-1 h3{margin-top:.2rem;font-size:.3rem;}
+  .lis-1 p{margin-top:.2rem;font-size:.17rem;line-height:.35rem;}
   .lis-1 .animation-box{margin-top:1rem;}
 
    footer{height:1.8rem;}
   .footer-t{height:1rem;}
   .footer-t a{font-size:.6rem;height:1rem;line-height:.8rem;margin:0 .2rem;}
   .footer-b{height:.8rem;}
-  .footer-b address{height:.8rem;line-height:.8rem;font-size:.24rem;}
+  .footer-b address{height:.8rem;line-height:.8rem;font-size:.19rem;}
 }
 
 @media screen and (min-width:960px) and (max-width:1199px) {
