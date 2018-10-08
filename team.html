@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cdn0.covalent.ai/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="https://cdn0.covalent.ai/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="https://cdn0.covalent.ai/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="https://cdn0.covalent.ai/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="https://cdn0.covalent.ai/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="https://cdn0.covalent.ai/favicons/favicon-128.png" sizes="128x128" />
+  <meta name="application-name" content="Covalent"/>
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta name="msapplication-TileImage" content="https://cdn0.covalent.ai/favicons/mstile-144x144.png" />
+  <meta name="msapplication-square70x70logo" content="https://cdn0.covalent.ai/favicons/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="https://cdn0.covalent.ai/favicons/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="https://cdn0.covalent.ai/favicons/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="https://cdn0.covalent.ai/favicons/mstile-310x310.png" />
     <meta content="IE=edge,chrome=1">
-    <meta name="keywords" content="DistantSound">
-    <meta name="author" content="DistantSound">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="format-detection" content="email=no">
-    <meta name="format-detection" content="telephone=no">
-    <title> COVA </title>
+    <title>COVA</title>
 
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" type="text/css" href="css/sub.css">
-    <link rel="stylesheet" type="text/css" href="css/meta-sub.css">
-    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
-    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn0.covalent.ai/cova_assets/css/public.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn0.covalent.ai/cova_assets/css/sub.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn0.covalent.ai/cova_assets/css/meta-sub.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn0.covalent.ai/cova_assets/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn0.covalent.ai/cova_assets/css/aos.css">
 
     <!-- Bootstrap core CSS -->
     <link href="https://s3-ap-southeast-1.amazonaws.com/covalent-home-assets/vendors/css/bootstrap.min.css" rel="stylesheet">
@@ -22,10 +38,10 @@
 
 
 
-    <script src="js/jquery-2.0.js"></script>
-    <script src="js/fastclick.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/public.js"></script>
+    <script src="https://cdn0.covalent.ai/cova_assets/js/jquery-2.0.js"></script>
+    <script src="https://cdn0.covalent.ai/cova_assets/js/fastclick.js"></script>
+    <script src="https://cdn0.covalent.ai/cova_assets/js/aos.js"></script>
+    <script src="https://cdn0.covalent.ai/cova_assets/js/public.js"></script>
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -92,7 +108,7 @@
 
     #logoBox > a {
           margin-bottom: 5rem;
-          margin: 1rem;
+          /* margin: 1rem; */
     }
 
       /* media query css */
@@ -104,6 +120,10 @@
         #cova_logo {
           width: 10rem;
         }
+      }
+
+      #mobile_logo {
+        display: none
       }
 
 
@@ -124,10 +144,39 @@
           padding-top: 2px
         }
 
-        #top-responsive {
-              margin-top: 10px;
-        }
 
+                #mobile_logo > img {
+                  width: 9.5rem;
+          margin-left: 1.5rem;
+          margin-top: 1.5rem;
+
+                }
+
+                #mobile_logo {
+                  display: inherit !important
+                }
+
+                #logo_top {
+                  display: none
+                }
+
+                .top-header {
+                  margin-right: -6rem;
+                }
+
+                .header-c nav .current, .header-c nav a:hover {
+                    font-size: .25rem;
+                }
+
+                .header-c nav {
+                      margin-top: 1.5rem;
+                  margin-left: 2rem;
+                }
+
+
+      #team {
+        margin-top: -6rem;
+      }
 
       }
 
@@ -153,11 +202,14 @@
 
   </head>
   <body class="bg-1">
+
+    <a href="./index.html" id="mobile_logo"><img src="https://cdn0.covalent.ai/cova_assets/img/t-logo.svg" class="f-l" /></a>
+
 	  <header data-aos="slide-down" data-aos-delay="300" id="main-header">
 	  	<div class="header-right-nav" id="responsive-menu"><i class="f-l iconfont nav-boxopen c-white c-white-h"> &#xe625; </i><i class="f-l iconfont nav-boxclose c-white c-white-h"> &#xe625; </i></div>
 		  <div class="top-header tran-sition">
 	      <div class="f-l header-c" id="top-responsive">
-		      <div class="l-box"><a href="./index.html" class="f-l t-logo"><img src="images/t-logo.svg" class="f-l" id="cova_logo"/></a></div>
+		      <div class="l-box"><a href="./index.html" class="f-l t-logo" id="logo_top"><img src="https://cdn0.covalent.ai/cova_assets/img/t-logo.svg" class="f-l" id="cova_logo"/></a></div>
 		      <div class="r-box">
 				 	  <nav class="f-l" id="nav-top">
               <a href="./index.html" class="f-l c-darkcyan tran-sition"> HOME </a>
@@ -182,12 +234,12 @@
          <div class="col-lg-4">
           <div class="team-member">
             <div class="team-photo">
-              <img src="http://cdn0.covalent.ai/cova_assets/team_photos/vincent.png">
+              <img src="https://cdn0.covalent.ai/cova_assets/team_photos/vincent.png">
             </div><br/>
             <h5>Vincent Li
             </h5><br/>
             <div class="brand">
-              <img src="http://cdn0.covalent.ai/cova_assets/uni/harvard.png">
+              <img src="https://cdn0.covalent.ai/cova_assets/uni/harvard.png">
             </div>
             <div class="intro">
               <ul class="list-unstyled">
@@ -207,12 +259,12 @@
         <div class="col-lg-4">
           <div class="team-member">
             <div class="team-photo">
-              <img src="http://cdn0.covalent.ai/cova_assets/team_photos/raymond.jpeg">
+              <img src="https://cdn0.covalent.ai/cova_assets/team_photos/raymond.jpeg">
             </div> <br/>
             <h5>Raymond Gao
             </h5><br>
             <div class="brand">
-              <img src="http://cdn0.covalent.ai/cova_assets/uni/princeton.png"> </div>
+              <img src="https://cdn0.covalent.ai/cova_assets/uni/princeton.png"> </div>
               <div class="intro">
                 <ul class="list-unstyled">
                   <li><b>Princeton University</b>, M.S.</li>
@@ -230,12 +282,12 @@
           <div class="col-lg-4">
             <div class="team-member">
               <div class="team-photo">
-                <img src="http://cdn0.covalent.ai/cova_assets/team_photos/tarik.jpeg">
+                <img src="https://cdn0.covalent.ai/cova_assets/team_photos/tarik.jpeg">
               </div>
               <h5>Tarik Moon
           </h5>
               <div class="brand">
-                <img src="http://cdn0.covalent.ai/cova_assets/uni/harvard.png">
+                <img src="https://cdn0.covalent.ai/cova_assets/uni/harvard.png">
               </div>
               <div class="intro">
                 <ul class="list-unstyled">
@@ -260,13 +312,13 @@
           <div class="col-lg-4" >
             <div class="team-member">
               <div class="team-photo">
-                <img src="http://cdn0.covalent.ai/cova_assets/team_photos/stratos.jpg">
+                <img src="https://cdn0.covalent.ai/cova_assets/team_photos/stratos.jpg">
               </div>
               <br/>
               <h5>Professor Stratos Idreos
           </h5><br/>
               <div class="brand">
-                <img src="http://cdn0.covalent.ai/cova_assets/uni/harvard.png">
+                <img src="https://cdn0.covalent.ai/cova_assets/uni/harvard.png">
               </div>
               <div class="intro">
                 <ul class="list-unstyled">
@@ -280,13 +332,13 @@
 
           <div class="col-lg-4">
             <div class="team-photo">
-              <img src="http://cdn0.covalent.ai/cova_assets/team_photos/zhou.jpg" target="_blank">
+              <img src="https://cdn0.covalent.ai/cova_assets/team_photos/zhou.jpg" target="_blank">
             </div><br/>
             <div class="team-member">
               <h5>Shuoji Zhou
           </h5><br/>
               <div class="brand">
-                <img src="http://cdn0.covalent.ai/cova_assets/img/fbg.png">
+                <img src="https://cdn0.covalent.ai/cova_assets/img/fbg.png">
               </div>
               <br/>
               <div class="intro">
@@ -301,14 +353,14 @@
           <div class="col-lg-4">
             <div class="team-member">
               <div class="team-photo">
-                <img src="http://cdn0.covalent.ai/cova_assets/team_photos/tian.jpg" target="_blank">
+                <img src="https://cdn0.covalent.ai/cova_assets/team_photos/tian.jpg" target="_blank">
               </div>
               <br/>
               <h5>Jia Tian
           </h5>
           <br/>
               <div class="brand">
-                <img src="http://cdn0.covalent.ai/cova_assets/uni/bitfin.png"><img src="http://cdn0.covalent.ai/cova_assets/img/fbg.png"><img src="http://cdn0.covalent.ai/cova_assets/uni/zcash2.svg">
+                <img src="https://cdn0.covalent.ai/cova_assets/uni/bitfin.png"><img src="https://cdn0.covalent.ai/cova_assets/img/fbg.png"><img src="https://cdn0.covalent.ai/cova_assets/uni/zcash2.svg">
               </div>
               <br/>
               <div class="intro">
@@ -336,14 +388,14 @@
   Going forward, we expect to see more part-time contributors hailing from
   technical communities around the world.
         </div>
-        <div class="col-lg-6" style="background-image: url(./images/team_asset_3.png);">
-          <img class="img-fluid" src="http://cdn0.covalent.ai/cova_assets/img/design.png">
+        <div class="col-lg-6" style="background-image: url(./img/team_asset_3.png);">
+          <img class="img-fluid" src="https://cdn0.covalent.ai/cova_assets/img/design.png">
         </div>
       </div>
 
     <div class="container">
 
-        <img class="img-fluid center-row" style="max-height:130vh" src="http://cdn0.covalent.ai/cova_assets/img/team_page.png">
+        <img class="img-fluid center-row" style="max-height:130vh" src="https://cdn0.covalent.ai/cova_assets/img/team_page.png">
       </div>
 
     <div class="container" style="text-align: -webkit-left;">
@@ -351,7 +403,7 @@
         <div class="divider"></div><br/>
 
         <div>
-        <img class="img-fluid center-row" style="max-width: 80%" src="http://cdn0.covalent.ai/cova_assets/img/community.png">
+        <img class="img-fluid center-row" style="max-width: 80%" src="https://cdn0.covalent.ai/cova_assets/img/community.png">
         </div>
       </div>
 

@@ -5,7 +5,7 @@
 	* IDE : UESTUDIO
 	* ----------------------------------------------------------------------------
 */
-.bg-1{display:inline-block;background:#d3fff8 url(../images/bg-1.png) no-repeat bottom fixed;}
+.bg-1{display:inline-block;background:#d3fff8 url(../img/bg-1.png) no-repeat bottom fixed;}
 .top-header{float:left;width:100%;}
 .header-c{width:100%;}
 .header-c nav a{text-align:center;white-space:nowrap;}
